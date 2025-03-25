@@ -1,0 +1,31 @@
+.banner {
+    text-align: center;
+    height: 75vh;
+    position: relative;
+    
+    .image {
+        background-image: url(../assets/app/catalog.jpg);
+        background-size: contain;
+        background-repeat: repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.3;
+    }
+    
+    .content {
+        position: relative;
+        z-index: 1;
+        flex: content;
+        .heading1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .heading2 {
+            font-weight: 700;
+            font-size: 1.13rem;
+        }
+    }
+}
