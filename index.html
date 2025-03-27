@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/banner.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/info.css">
     <!-- 
     <style>
     /* 
@@ -41,22 +43,18 @@
     </style>
     -->
 </head>
-<body class="main">
+<body class="body">
+    <h1 id="sr-only">Codeflix</h1> <!-- Sólo un h1 por página -->
     <header class="header">
         <img src="./assets/app/codeflix.png" alt="">
         <nav class="nav">
             <ul class="list">
-                <li><a href="">All shows</a>
-                <a href="signin.html">Sign in</a>
-            <!--<a href="https://google.com" target="_blank">google</a>--> 
-                </li>
+                <li><a href="" class="btn hide">All shows</a></li>
+                <li><a href="signin.html" class="btn">Sign in</a></li>
+            <!--<a href="https://google.com" target="_blank">google</a>-->
             </ul>
         </nav>  
     </header>
-    <main>
-    <h1 id="title">codeflix</h1> <!-- Sólo un h1 por página -->
-    <h2>Shows</h2> <!-- No saltar niveles -->
-    <hr>
     <section class="banner">
         <div class="image"></div>
         <div class="content"><p class="heading1">Unlimited movies, TV shows and more!</p>
@@ -64,12 +62,16 @@
         <p>Ready to watch?</p>
         </div>
     </section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae facere odio inventore eos 
-        rem quia optio. Vitae quod libero accusantium accusamus. Praesentium laudantium obcaecati 
-        nobis ipsum aut commodi iste temporibus!</p>
-    <p class="white-bg purple">Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Unde sequi quia natus pariatur</strong> 
-        nihil libero cupiditate quis nam veritatis! <a href="index.html">Praesentium, officia.</a> Omnis sit enim quisquam quos 
-        nihil! <em>Dicta, magni!</em></p>
+    <main class="main">
+        <!--<iframe src="https://keepcoding.io/" frameborder="2px" width="95%" height="800px"></iframe>-->
+        <section class="info">
+            <h2 class="heading3">Watch everywhere</h2>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV</p>
+            <div class="assets">
+                <video src="./assets/app/video-devices.m4v" muted autoplay loop></video>
+                <img src="assets/app/device-pile.png" alt="">
+            </div>  
+        </section>
     </main>
     <footer class="footer">
         <p>2025 <strong>Codeflix</strong>. All rights reserved.</p>

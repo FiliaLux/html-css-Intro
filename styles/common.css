@@ -1,16 +1,39 @@
 :root {
     --bg-color: black;
     --main-text-color: white;
-    --main-brand-color: #ff1e9b;
-    --main-brand-contrast-color: skyblue;
+    --main-brand-color: #e30606;
+    --main-brand-contrast-color: rgb(24, 28, 255);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-.main {
+.body {
     color: var(--main-text-color);
     background-color: var(--bg-color);
 }
+
 a {
     text-decoration: none;
 }
 
+a.hide {
+    display: none;
+    /* visibility: hidden;*/
+}
+
+h1 {
+    display: none;
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+* {
+    box-sizing: border-box;
+}
