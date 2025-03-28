@@ -24,6 +24,10 @@ h1 {
     display: none;
 }
 
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
 .sr-only:not(:focus):not(:active) {
     clip: rect(0 0 0 0); 
     clip-path: inset(50%);
@@ -36,4 +40,10 @@ h1 {
 
 * {
     box-sizing: border-box;
+}
+
+@media screen and (width > 768px) {
+    a.hide {
+        display: block;
+    }
 }
