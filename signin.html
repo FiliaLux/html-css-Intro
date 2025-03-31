@@ -4,11 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codeflix | Sign In</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/singin.css">
 </head>
-<body>
-    <form action="">
-        <input type="text">
-        <button>Save</button>
-    </form>
+<body class="body container">
+    <main class="card">
+     <h1>Sign in:</h1>
+        <form action="./registro" method="post" novalidate>
+            <div class="form-element">
+                <label for="mail">Email: </label>
+                <input required type="email" name="email" id="mail" autocomplete="off" value="test@test.com">
+            </div>
+            <div class="form-element">
+                <label for="password">Password: </label>
+                <input required type="password" name="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="form-element">
+                <label for="tel">Phone number: </label>
+                <input required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"type="tel" name="telephone" id="tel" placeholder="XXX-XXX-XXX" autocomplete="off">
+            </div>
+            <div class="form-element">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="Spain">Spain</option>
+                    <option value="USA">United States</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Russia">Russia</option>
+                </select>
+            </div>
+            <!--<div class="form-element">
+                    <label for="picture" style="
+                    padding: 20px;
+                    display: inline-block;
+                    border: 1px dotted;
+                    margin: 10px;
+                    cursor: pointer;">
+                Select your profile picture</label>
+                <input type="file" name="picture" id="picture" style="display: none;">
+            </div>-->
+            <div class="file-element">
+                <!--<label for="profile-pic">Select profile picture...</label>-->
+                <label for="profile-pic" style="
+                    padding: 1rem;
+                    display: inline-block;
+                    border: 2px dotted;
+                    width: 100%;
+                    cursor: pointer;">
+                Select your profile picture</label>
+                <input type="file" name="profile-pic" id="profile-pic" accept="image/png">
+            </div>
+            <fieldset class="form-element row">
+                <legend>Fav genre</legend>
+                <label for="comedy">Comedy</label>
+                <input type="radio" name="fav" id="comedyFav" value="comedy" checked>
+                <label for="drama">Drama</label>
+                <input type="radio" name="fav" id="dramaFav" value="drama">
+            </fieldset>
+            <fieldset class="form-element row">
+                <legend>Want to watch</legend>
+                <label for="comedy">Comedy</label>
+                <input type="checkbox" name="watch" id="comedy" value="comedy">
+                <label for="drama">Drama</label>
+                <input type="checkbox" name="watch" id="drama" value="drama">
+                <label for="thriller">Thriller</label>
+                <input type="checkbox" name="watch" id="thriller" value="thriller">
+            </fieldset>
+            <div class="form-element">
+                <label for="bio">Enter bio: </label>
+                <textarea name="bio" id="bio" rows="4" placeholder="Write here..." maxlength="100"></textarea>
+            </div>
+            <div class="form-element row">
+                <label for="remember">Remember me</label>
+                <input type="checkbox" name="remember" id="remember">
+            </div class>
+            <input class="btn secondary" type="reset" value="Reset">
+            <button class="btn">Save</button>
+        </form>   
+    </main>
 </body>
 </html>
